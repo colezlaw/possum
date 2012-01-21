@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Archetype Created Web Application</display-name>
+  <listener>
+    <listener-class>bubbasoft.possum.servlet.PeoplePopulatorListener</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>EvaluateServlet</display-name>
+    <servlet-name>EvaluateServlet</servlet-name>
+    <servlet-class>bubbasoft.possum.servlet.EvaluateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EvaluateServlet</servlet-name>
+    <url-pattern>/evaluate</url-pattern>
+  </servlet-mapping>
+</web-app>
